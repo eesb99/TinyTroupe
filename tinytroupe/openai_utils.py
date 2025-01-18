@@ -129,7 +129,7 @@ class OpenAIClient:
         """
         Sets up the OpenAI API configurations for this client.
         """
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
     def send_message(self,
                     current_messages,
@@ -410,9 +410,9 @@ class AzureClient(OpenAIClient):
         Sets up the Azure OpenAI Service API configurations for this client,
         including the API endpoint and key.
         """
-        self.client = AzureOpenAI(azure_endpoint= os.getenv("AZURE_OPENAI_ENDPOINT"),
+        self.client = AzureOpenAI(azure_endpoint= os.environ['AZURE_OPENAI_ENDPOINT'],
                                   api_version = config["OpenAI"]["AZURE_API_VERSION"],
-                                  api_key = os.getenv("AZURE_OPENAI_KEY"))
+                                  api_key = os.environ['AZURE_OPENAI_KEY'])
     
 
 ###########################################################################
@@ -505,6 +505,3 @@ def force_api_cache(cache_api_calls, cache_file_name=default["cache_file_name"])
 # default client
 register_client("openai", OpenAIClient())
 register_client("azure", AzureClient())
-    
-
-
