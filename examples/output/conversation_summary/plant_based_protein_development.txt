@@ -1,0 +1,37 @@
+# Plant-Based Protein Development Summary
+
+## Protein Sources and Ratios
+- **Primary Source**: Pea protein (70%)
+  - Rich in lysine and essential amino acids
+- **Secondary Source**: Rice protein (30%)
+  - High in methionine, complementing pea protein
+- **Combined Benefits**: Balanced amino acid profile and enhanced protein quality
+
+## Testing Methods
+### In-Vitro Testing
+- Selected Method: INFOGEST protocol
+- Benefit: Effectively simulates human digestion
+
+### In-Vivo Testing
+- Selected Method: Animal models
+- Benefit: Provides comprehensive data on protein quality
+
+## Key Parameters to Measure
+1. Protein digestibility
+2. Amino acid profiles
+3. Overall protein quality
+4. PDCAAS (Protein Digestibility Corrected Amino Acid Score)
+
+## Next Steps
+### Timeline Development
+- Create detailed study timeline
+- Plan resource allocation
+
+### Required Resources
+1. Laboratory Equipment
+2. Research Personnel
+3. INFOGEST Method Materials
+4. Animal Care Facilities
+
+## Conclusion
+The team has agreed on a 70:30 pea-to-rice protein ratio and established a comprehensive testing approach using both in-vitro and in-vivo methods. The next phase involves detailed planning of resources and timeline for the digestibility studies.

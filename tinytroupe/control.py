@@ -4,6 +4,7 @@ Simulation controlling mechanisms.
 import json
 import os
 import tempfile
+import shutil
 
 import tinytroupe
 import tinytroupe.utils as utils
@@ -263,8 +264,9 @@ class Simulation:
             with tempfile.NamedTemporaryFile('w', delete=False) as temp:
                 json.dump(self.cached_trace, temp, indent=4)
 
-            # Replace the original file with the temporary file
-            os.replace(temp.name, cache_path)
+            # Copy the temp file to target location and then delete the temp file
+            shutil.copy2(temp.name, cache_path)
+            os.unlink(temp.name)
         except Exception as e:
             print(f"An error occurred: {e}")
 

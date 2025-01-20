@@ -709,14 +709,11 @@ class TinyWorld:
     @staticmethod
     def add_environment(environment):
         """
-        Adds an environment to the list of all environments. Environment names must be unique,
-        so if an environment with the same name already exists, an error is raised.
+        Adds an environment to the list of all environments. If an environment with the same name
+        already exists, it will be replaced with the new one.
         """
-        if environment.name in TinyWorld.all_environments:
-            raise ValueError(f"Environment names must be unique, but '{environment.name}' is already defined.")
-        else:
-            TinyWorld.all_environments[environment.name] = environment
-        
+        # Replace any existing environment with the same name
+        TinyWorld.all_environments[environment.name] = environment
 
     @staticmethod
     def set_simulation_for_free_environments(simulation):
